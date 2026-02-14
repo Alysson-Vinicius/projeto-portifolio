@@ -144,3 +144,44 @@ div.video-conteiner iframe {
   border-radius: 8px;
 }
 
+div#skill-conteiner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+div#skill-conteiner div.infor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div#skill-conteiner span.nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+
+div#skill-conteiner span.porcent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+div#skill-conteiner div.barra {
+  width: 100%;
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--fundo-principal);
+}
+
+div#skill-conteiner div.progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+    div#skill-conteiner {
+      grid-template-columns: 1fr 1fr;
+    }
+}
+
